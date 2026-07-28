@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fracture Yard — Rapier3D physics</title>
+<meta name="description" content="A real rigid-body sandbox: Rapier3D (Rust compiled to WebAssembly) runs the simulation, three.js draws it. Click to fire, R to rebuild.">
+<style>
+  :root { color-scheme: dark }
+  html,body { margin:0; height:100%; background:#0b0f1a; overflow:hidden;
+              font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; color:#e2e8f0 }
+  canvas { display:block }
+  #hud { position:fixed; left:16px; top:14px; white-space:pre; pointer-events:none;
+         text-shadow:0 1px 3px #000 }
+  #tag { position:fixed; right:16px; bottom:12px; opacity:.5; pointer-events:none }
+</style>
+<script src="https://a.hanzo.ai/analytics.js" data-org="hanzo" crossorigin="anonymous" defer></script>
+<script src="https://a.hanzo.ai/chat.js" data-org="hanzo" data-mode="site" crossorigin="anonymous" defer></script>
+</head>
+<body>
+<div id="hud">loading physics wasm…</div>
+<div id="tag">Fracture Yard · rapier3d + three.js · hanzo.app</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

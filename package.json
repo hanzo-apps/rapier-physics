@@ -1,0 +1,8 @@
+{
+  "name": "rapier-physics",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "esbuild src/main.js --bundle --format=esm --minify --target=es2022 --loader:.wasm=binary --outfile=app.js" },
+  "dependencies": { "@dimforge/rapier3d-compat": "^0.19.3", "three": "^0.185.1" },
+  "devDependencies": { "esbuild": "^0.25.0" }
+}
